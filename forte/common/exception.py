@@ -27,7 +27,7 @@ __all__ = [
 
 
 class PackIndexError(Exception):
-    r"""Raise this error when there is a problem accessing the indexes pack
+    r"""Raise this error when there is a problem accessing the indexed pack
     data.
     """
     pass
@@ -63,5 +63,5 @@ class ProcessFlowException(Exception):
 
 
 class ProcessExecutionException(Exception):
-    r"""Raise this when process execution fail"""
+    r"""Raise this when process execution fails"""
     pass
