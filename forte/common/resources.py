@@ -38,20 +38,19 @@ class Resources:
 
     def save(self, keys: Optional[Union[List[str], SerializeDict]] = None,
              output_dir: Optional[str] = None):
-        r"""Save the resources specified by ``keys`` in binary format.
+        r"""Save the resources specified by ``keys`` in a binary format.
 
         Args:
             keys (optional): list or dict
 
-                - If ``keys`` is a list, the objects corresponding to those keys
-                  are saved
-                - If ``keys`` is a dict mapping from a key to a serialize
-                  function, then the serialize function will be used to save the
+                - If ``keys`` is a list, save the objects corresponding to those keys
+                - If ``keys`` is a dict mapping from a key to a serialization
+                  function, use the serialization function to save the
                   object corresponding to that key
-                - If ``keys`` is None, all objects in this resource will be
-                  saved.
+                - If ``keys`` is None, save all the objects in this resource
+                
             output_dir (optional): str
-                A directory specifying the location to save the resources.
+                A directory that specifies the location to save the resources.
         """
 
         # TODO: use a default save directory like default_save_dir() if None
@@ -99,13 +98,12 @@ class Resources:
         Args:
             keys: list or dict
 
-                - If ``keys`` is a list, the objects corresponding to those keys
-                  are loaded
-                - If ``keys`` is a dict mapping from a key to a deserialize
-                  function, then the deserialize function will be used to load
+                - If ``keys`` is a list, load the objects corresponding to those key
+                - If ``keys`` is a dict mapping from a key to a deserialization
+                  function, use the deserialization function to load
                   the object corresponding to that key
             path (optional): str
-                A directory specifying the location to load the resources from.
+                A directory that specifies the location to load the resources from.
         """
 
         # TODO: use a default save directory like default_save_dir() if None
